@@ -22,7 +22,7 @@
 
         <form class="modal-content animate" action="./categories.html" method="POST">
             <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <span id="avatar-span" class="close" title="Close Modal">&times;</span>
                 <img src="./images/avatar.png" alt="Avatar" class="avatar">
             </div>
 
@@ -41,8 +41,8 @@
                 </label>
             </div>
 
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <div class="container" id="another-bg-color">
+                <button id="cancel-btn" type="button" class="cancelbtn">Cancel</button>
                 <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
         </form>

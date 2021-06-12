@@ -11,3 +11,11 @@ window.onclick = function(event) {
 document.getElementById('login-click').addEventListener('click', () => {
     document.getElementById('id01').style.display = 'block';
 })
+
+document.getElementById('avatar-span').addEventListener('click', () => {
+    document.getElementById('id01').style.display = 'none';
+})
+
+document.getElementById('cancel-btn').addEventListener('click', () => {
+    document.getElementById('id01').style.display = 'none';
+})
