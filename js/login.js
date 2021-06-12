@@ -7,3 +7,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+document.getElementById('id01').addEventListener('click', () => {
+    document.getElementById('id01').style.display = 'block';
+})
