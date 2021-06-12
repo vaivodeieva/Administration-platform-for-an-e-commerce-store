@@ -8,6 +8,6 @@ window.onclick = function(event) {
     }
 }
 
-document.getElementById('id01').addEventListener('click', () => {
+document.getElementById('login-click').addEventListener('click', () => {
     document.getElementById('id01').style.display = 'block';
 })
