@@ -1,231 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="http://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="http://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script> 
-    </head>
-    <body>
-       <h2>Categories</h2>
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="http://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+</head>
 
-       <div class="container my-5">
+<body>
+    <h2>Categories</h2>
+
+    <div class="container my-5">
 
         <table id="datatable1" class="display text-center my-5" style="width:100%" style="width:100%">
             <thead>
-               <tr>
-                  <th>ID</th>
-                  <th>Title</th>
-                  <th>Description</th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th> </th>
-               </tr>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th> </th>
+                </tr>
             </thead>
             <tbody>
-               <tr>
-                  <td>1</td>
-                  <td>Dresses</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Dresses</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>2</td>
-                  <td>Shirts</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Shirts</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>3</td>
-                  <td>Shorts</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Shorts</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>4</td>
-                  <td>Trousers</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Trousers</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>5</td>
-                  <td>Sweatshirts</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Sweatshirts</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>6</td>
-                  <td>Outerwear</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Outerwear</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>7</td>
-                  <td>Blouses</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Blouses</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>8</td>
-                  <td>Skirts</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Skirts</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>9</td>
-                  <td>Jackets</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Jackets</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>10</td>
-                  <td>Sweaters</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Sweaters</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>11</td>
-                  <td>Sweaters</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Sweaters</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>12</td>
-                  <td>Sweaters</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Sweaters</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>13</td>
-                  <td>Sweaters</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Sweaters</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>14</td>
-                  <td>Sweaters</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Sweaters</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
 
-               <tr>
-                  <td>15</td>
-                  <td>Sweaters</td>
-                  <td>Blah blah</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                     <button class="btn btn-warning">Edit</button>
-                     <button class="btn btn-danger btn-del">Delete</button>
-                 </td>
-               </tr>
-              
+                <tr>
+                    <td>15</td>
+                    <td>Sweaters</td>
+                    <td>Blah blah</td>
+                    <td>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger btn-del">Delete</button>
+                    </td>
+                </tr>
+
             </tbody>
-         </table>
-      </div>
-         <script src="./js/categories.js"></script>
-    </body>
+        </table>
+    </div>
+    <script src="./js/categories.js"></script>
+</body>
 
 
 </html>
