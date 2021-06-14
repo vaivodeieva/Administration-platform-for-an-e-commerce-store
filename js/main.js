@@ -39,7 +39,7 @@ $('.save-category').click(function() {
 })
 
 
-
+// edit btn for categories page
 $('.btn-edit').click(function() {
     const editInput = `
         <td>
@@ -71,13 +71,43 @@ $('.btn-edit').click(function() {
     //     `;
     //     $(this).closest('tr').html(newCategory);
     // })
+});
+
+$('#create-product').click(function() {
+    $('#new-product').removeAttr('hidden');
+    $('#new-product').toggle(true);
+});
+
+$('#save-new-product').click(function() {
+    const newProduct = `
+    <tr>
+        <td>
+            <img class="img-fluid" src="images/products/1.jpg" alt="">
+        </td>
+        <td>${$('.product-id-input').val()}</td>
+        <td>${$('.product-id-input').val()}</td>
+        <td>${$('.product-description-input').val()}</td>
+        <td>${$('.product-price-input').val()}</td>
+        <td>${$('.product-d-price-input').val()}</td>
+        <td>
+            <button class="btn btn-outline-warning btn-edit2">Edit</button>
+            <button class="btn btn-danger delete-product">Delete</button>
+        </td>
+    </tr>
+    `;
+    $('#products-datatable tbody').prepend(newProduct);
+    $('.product-id-input').val('');
+    $('.product-name-input').val('');
+    $('.product-description-input').val('');
+    $('.product-price-input').val('');
+    $('.product-d-price-input').val('');
+    $('#new-product').toggle(false);
+    $('#products-datatable tbody').prepend($('#new-product'));
 })
-
-
 
 // edit btn for products page
 $('.btn-edit2').click(function() {
-        const editInput = `
+    const editInput = `
         <td>
          <button type="button" class="btn btn-outline-info">Upload IMG</button>
        </td>   
@@ -101,9 +131,9 @@ $('.btn-edit2').click(function() {
             <button class="btn btn-success save-category">Save</button>
         </td>
     `;
-        $(this).closest('tr').html(editInput);
-    })
-    //
+    $(this).closest('tr').html(editInput);
+})
+
 
 
 
@@ -137,6 +167,7 @@ $('.btn-edit2').click(function() {
 //     $('#products-datatable tbody').prepend($('#new-product'));
 // })
 
+// edit btn for orders page
 $('.edit-order').click(function() {
     const editInput = `
         <td>
