@@ -43,13 +43,13 @@ $('.save-category').click(function() {
 $('.btn-edit').click(function() {
     const editInput = `
         <td>
-            <input type="text" class="form-control category-id-input" placeholder="${$(this).parent().prev().prev().prev().text()}">
+            <input type="text" class="form-control category-id-input" value="${$(this).parent().prev().prev().prev().text()}">
         </td>
         <td>
-            <input type="text" class="form-control category-name-input" placeholder="${$(this).parent().prev().prev().text()}">
+            <input type="text" class="form-control category-name-input" value="${$(this).parent().prev().prev().text()}">
         </td>
         <td>
-            <input type="text" class="form-control category-description-input" placeholder="${$(this).parent().prev().text()}">
+            <input type="text" class="form-control category-description-input" value="${$(this).parent().prev().text()}">
         </td>
         <td>
             <button class="btn btn-success save-category">Save</button>
@@ -77,33 +77,33 @@ $('.btn-edit').click(function() {
 
 // edit btn for products page
 $('.btn-edit2').click(function() {
-    const editInput = `
+        const editInput = `
         <td>
          <button type="button" class="btn btn-outline-info">Upload IMG</button>
        </td>   
         <td>
-          <input type="text" class="form-control category-id-input" placeholder="${$(this).parent().prev().prev().prev().prev().prev().text()}">
+          <input type="text" class="form-control category-id-input" value="${$(this).parent().prev().prev().prev().prev().prev().text()}">
         </td>
         <td>
-          <input type="text" class="form-control category-id-input" placeholder="${$(this).parent().prev().prev().prev().prev().text()}">
+          <input type="text" class="form-control category-id-input" value="${$(this).parent().prev().prev().prev().prev().text()}">
         </td>
        
         <td>
-            <input type="text" class="form-control category-id-input" placeholder="${$(this).parent().prev().prev().prev().text()}">
+            <input type="text" class="form-control category-id-input" value="${$(this).parent().prev().prev().prev().text()}">
         </td>
         <td>
-            <input type="text" class="form-control category-name-input" placeholder="${$(this).parent().prev().prev().text()}">
+            <input type="text" class="form-control category-name-input" value="${$(this).parent().prev().prev().text()}">
         </td>
         <td>
-            <input type="text" class="form-control category-description-input" placeholder="${$(this).parent().prev().text()}">
+            <input type="text" class="form-control category-description-input" value="${$(this).parent().prev().text()}">
         </td>
         <td>
             <button class="btn btn-success save-category">Save</button>
         </td>
     `;
-    $(this).closest('tr').html(editInput);
-})
-//
+        $(this).closest('tr').html(editInput);
+    })
+    //
 
 
 
@@ -136,3 +136,39 @@ $('.btn-edit2').click(function() {
 //     $('#new-product').toggle(false);
 //     $('#products-datatable tbody').prepend($('#new-product'));
 // })
+
+$('.edit-order').click(function() {
+    const editInput = `
+        <td>
+            <input class="form-control" type="text" value="${$(this).parent().prev().prev().prev().prev().prev().prev().prev().text()}">
+        </td>
+        <td>
+            <input class="form-control" type="text" value="${$(this).parent().prev().prev().prev().prev().prev().prev().children(":first").text()}">
+            <input class="form-control" type="text" value="${$(this).parent().prev().prev().prev().prev().prev().prev().children(":nth-child(2)").text()}">
+            <input class="form-control" type="text" value="${$(this).parent().prev().prev().prev().prev().prev().prev().children(":nth-child(3)").text()}">
+        </td>
+        <td>
+            <input class="form-control" type="text" value="${$(this).parent().prev().prev().prev().prev().prev().text()}">
+        </td>
+        <td>
+            <input class="form-control" type="text" value="${$(this).parent().prev().prev().prev().prev().text()}">
+        </td>
+        <td>
+            <input class="form-control" type="text" value="${$(this).parent().prev().prev().prev().text()}">
+        </td>
+        <td>
+            <input class="form-control" type="text" value="${$(this).parent().prev().prev().text()}">
+        </td>
+        <td>
+            <select class="form-control">
+                <option class="badge bg-success" value="success">Completed</option>
+                <option class="badge bg-warning" value="success">Pending</option>
+                <option class="badge bg-danger" value="success">Cancelled</option>
+            </select>
+        </td>
+        <td>
+            <button class="btn btn-success">Save</button>
+        </td>
+    `;
+    $(this).closest('tr').html(editInput);
+})
