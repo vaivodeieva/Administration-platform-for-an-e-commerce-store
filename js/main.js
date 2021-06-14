@@ -1,12 +1,31 @@
-$(document).ready(function() {
-    $('#products-datatable, #orders-datatable, #categories-datatable').DataTable();
+$('#categories-datatable').DataTable({
+    columnDefs: [
+        { orderable: false, targets: 3 }
+    ]
 });
 
-$('#products-datatable, #orders-datatable, #categories-datatable').dataTable({
+$('#products-datatable').DataTable({
     "lengthMenu": [
         [5, 10, 15, -1],
         [5, 10, 15, "All"]
-    ]
+    ],
+    columnDefs: [
+        { orderable: false, targets: [0, 6] },
+    ],
+    "order": [0]
+});
+
+$('#orders-datatable').DataTable({
+    "lengthMenu": [
+        [5, 10, 15, -1],
+        [5, 10, 15, "All"]
+    ],
+    columnDefs: [
+        { orderable: false, targets: 7 }
+    ],
+    // columnDefs: [
+    //     { orderable: false, targets: 0 }
+    // ],
 });
 
 $('.delete-product, .delete-order, .btn-del').click(function() {
