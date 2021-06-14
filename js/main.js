@@ -73,37 +73,37 @@ $('.btn-edit').click(function() {
     // })
 });
 
-$('#create-product').click(function() {
-    $('#new-product').removeAttr('hidden');
-    $('#new-product').toggle(true);
-});
+// $('#create-product').click(function() {
+//     $('#new-product').removeAttr('hidden');
+//     $('#new-product').toggle(true);
+// });
 
-$('#save-new-product').click(function() {
-    const newProduct = `
-    <tr>
-        <td>
-            <img class="img-fluid" src="images/products/1.jpg" alt="">
-        </td>
-        <td>${$('.product-id-input').val()}</td>
-        <td>${$('.product-id-input').val()}</td>
-        <td>${$('.product-description-input').val()}</td>
-        <td>${$('.product-price-input').val()}</td>
-        <td>${$('.product-d-price-input').val()}</td>
-        <td>
-            <button class="btn btn-outline-warning btn-edit2">Edit</button>
-            <button class="btn btn-danger delete-product">Delete</button>
-        </td>
-    </tr>
-    `;
-    $('#products-datatable tbody').prepend(newProduct);
-    $('.product-id-input').val('');
-    $('.product-name-input').val('');
-    $('.product-description-input').val('');
-    $('.product-price-input').val('');
-    $('.product-d-price-input').val('');
-    $('#new-product').toggle(false);
-    $('#products-datatable tbody').prepend($('#new-product'));
-})
+// $('#save-new-product').click(function() {
+//     const newProduct = `
+//     <tr>
+//         <td>
+//             <img class="img-fluid" src="images/products/1.jpg" alt="">
+//         </td>
+//         <td>${$('.product-id-input').val()}</td>
+//         <td>${$('.product-id-input').val()}</td>
+//         <td>${$('.product-description-input').val()}</td>
+//         <td>${$('.product-price-input').val()}</td>
+//         <td>${$('.product-d-price-input').val()}</td>
+//         <td>
+//             <button class="btn btn-outline-warning btn-edit2">Edit</button>
+//             <button class="btn btn-danger delete-product">Delete</button>
+//         </td>
+//     </tr>
+//     `;
+//     $('#products-datatable tbody').prepend(newProduct);
+//     $('.product-id-input').val('');
+//     $('.product-name-input').val('');
+//     $('.product-description-input').val('');
+//     $('.product-price-input').val('');
+//     $('.product-d-price-input').val('');
+//     $('#new-product').toggle(false);
+//     $('#products-datatable tbody').prepend($('#new-product'));
+// })
 
 // edit btn for products page
 $('.btn-edit2').click(function() {
