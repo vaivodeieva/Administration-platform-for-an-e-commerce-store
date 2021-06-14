@@ -75,6 +75,36 @@ $('.btn-edit').click(function() {
 
 
 
+// edit btn for products page
+$('.btn-edit2').click(function() {
+    const editInput = `
+        <td>
+         <button type="button" class="btn btn-outline-info">Upload IMG</button>
+       </td>   
+        <td>
+          <input type="text" class="form-control category-id-input" placeholder="${$(this).parent().prev().prev().prev().prev().prev().text()}">
+        </td>
+        <td>
+          <input type="text" class="form-control category-id-input" placeholder="${$(this).parent().prev().prev().prev().prev().text()}">
+        </td>
+       
+        <td>
+            <input type="text" class="form-control category-id-input" placeholder="${$(this).parent().prev().prev().prev().text()}">
+        </td>
+        <td>
+            <input type="text" class="form-control category-name-input" placeholder="${$(this).parent().prev().prev().text()}">
+        </td>
+        <td>
+            <input type="text" class="form-control category-description-input" placeholder="${$(this).parent().prev().text()}">
+        </td>
+        <td>
+            <button class="btn btn-success save-category">Save</button>
+        </td>
+    `;
+    $(this).closest('tr').html(editInput);
+})
+//
+
 
 
 // $('#create-product').click(function() {
